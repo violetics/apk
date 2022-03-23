@@ -18,7 +18,7 @@ for (var i = 0; i < plugins.length; i++) {
 		return function Violetics(apps, fn) {
 			if (!apps || typeof apps != "string")
 				throw new VioleticsError(`${plugin_}() required apps and must be typeof string`);
-			return send(BASE(plugin_), { apikey: apikey, apps: apps } , fn);
+			return send(BASE(plugin_), { apikey: apikey, apps: apps }, fn);
 		};
 	};
 }
