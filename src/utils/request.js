@@ -15,11 +15,8 @@ module.exports = function sendRequest(url, params = {}) {
 			},
 		})
 			.json()
-			.then((response) => {
-				console.log(response);
-			})
+			.then(resolve)
 			.catch((error) => {
-				console.log(error.response);
 				if (error.hasOwnProperty("response")) {
 					if (error.response && error.response.hasOwnProperty("rawBody")) {
 						let data = JSON.parse(error.response.rawBody.toString());
