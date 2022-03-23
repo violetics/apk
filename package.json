@@ -1,6 +1,6 @@
 {
 	"name": "@violetics/apk",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Apk API Wrapper for https://violetics.pw/api/apk",
 	"main": "src/index.js",
 	"scripts": {
